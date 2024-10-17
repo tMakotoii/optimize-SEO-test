@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href='style.css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="form-wrapper">
+        <form id="quiz-form-1" class="quiz-form">
+            <p class="question">В 2025 году налогоплательщики на УСН с доходом от 60 до 450 млн рублей могут сделать выбор между обычной ставкой НДС (20% или 10%) или пониженной ставкой (5% или 7%).</p>
+            <div class="ans-var">
+                <input type="radio" id="q1-ans1" value="correct" class="real-radio">
+                <label for="q1-ans1">Верю</label>
+            </div>
+            <div class="ans-var">
+                <input type="radio" id="q1-ans2" value="incorrect">
+                <label for="q1-ans2">Не верю</label>
+            </div>
+            <div id="message1" class="true-ans hidden ans">Совершенно точно. Заявление о выборе ставки не подается, избранную ставку налоговый орган увидит из декларации за I квартал 2025 года.
+            </div>
+            <div id="message2" class="false-ans hidden ans">И зря. Решение о ставке — за налогоплательщиком, при этом заявление о выборе ставки не подается, избранную ставку налоговый орган увидит из декларации за I квартал 2025 года.</div>
+        </form>
+        
+        <form id="quiz-form-2" class="quiz-form">
+            <p class="question">Выбрав пониженную ставку НДС в 2025 году, налогоплательщик обязуется применять ее в течение 12 месяцев.</p>
+            <div class="ans-var">
+                <input type="radio" id="q2-ans1" value="incorrect" class="real-radio">
+                <label for="q2-ans1">Верю</label>
+            </div>
+            <div class="ans-var">
+                <input type="radio" id="q2-ans2" value="correct">
+                <label for="q2-ans2">Не верю</label>
+            </div>
+            <div id="message3" class="true-ans hidden ans">Вы правы.При выборе пониженной ставки применять ее необходимо не меньше 12 последовательно идущих кварталов подряд. Прекратить применение пониженной ставки раньше можно только в случае утраты права на ее применение. Подробно процедуру перехода на особый порядок уплаты НДС мы описали в <a href="https://www.kontur-extern.ru/info/51623-uproshchency_budut_platit_nds" target="_blank">статье</a>.
+            </div>
+            <div id="message4" class="false-ans hidden ans">Ошибаетесь, при выборе пониженной ставки применять ее необходимо не меньше 12 последовательно идущих кварталов подряд, а не месяцев. Прекратить применение пониженной ставки раньше возможно только в случае утраты права на ее применение. Подробно процедуру перехода на особый порядок уплаты НДС мы описали в <a href="https://www.kontur-extern.ru/info/51623-uproshchency_budut_platit_nds" target="_blank">статье</a></div>
+        </form>
+        
+        <form id="quiz-form-3" class="quiz-form">
+            <p class="question">Если в 2025 году компания избрала пониженную ставку налога, платить НДС с экспорта тоже придется.</p>
+            <div class="ans-var">
+                <input type="radio" id="q3-ans1" value="incorrect" class="real-radio">
+                <label for="q3-ans1">Верю</label>
+            </div>
+            <div class="ans-var">
+                <input type="radio" id="q3-ans2" value="correct">
+                <label for="q3-ans2">Не верю</label>
+            </div>
+            <div id="message5" class="true-ans hidden ans">И правильно делаете. Экспортные операции являются исключением и облагаются НДС по ставке 0% (п. 1 ст. <a href="https://normativ.kontur.ru/document?moduleId=1&documentId=479132" target="_blank">164</a> НК РФ).
+            </div>
+            <div id="message6" class="false-ans hidden ans">Ошибочка вышла. Экспортные операции являются исключением и облагаются НДС по ставке 0% (п. 1 ст. <a href="https://normativ.kontur.ru/document?moduleId=1&documentId=479132" target="_blank">164</a> НК РФ).</div>
+        </form>
+        
+        <form id="quiz-form-4" class="quiz-form">
+            <p class="question">По принятому в июле закону в 2025 году предпринимателям, которые освобождены от уплаты НДС и имеют доход не больше 60 млн рублей в год, все равно нужно вести книгу продаж и выставлять счета-фактуры.</p>
+            <div class="ans-var">
+                <input type="radio" id="q4-ans1" value="correct" class="real-radio">
+                <label for="q4-ans1">Верю</label>
+            </div>
+            <div class="ans-var">
+                <input type="radio" id="q4-ans2" value="incorrect">
+                <label for="q4-ans2">Не верю</label>
+            </div>
+            <div id="message7" class="true-ans hidden ans">Совершенно верно. В настоящий момент изменения в НК РФ обязывают упрощенцев выставлять счета-фактуры с пометкой «Без НДС», даже если их доходы не превысили 60 млн рублей (п. <a href="https://normativ.kontur.ru/document?moduleId=1&documentId=479132&rangeId=6525725" target="_blank">5</a> ст. 168 НК РФ). Также установлена обязанность ведения книги продаж (п. «ч» Правил ведения книги продаж, утв. Постановлением Правительства от 26.12.2011 <a href="https://normativ.kontur.ru/document?moduleId=1&documentId=478552" target="_blank">№ 1137</a>). Скорее всего, эти нормы изменятся — опубликован <a href="https://sozd.duma.gov.ru/bill/727330-8" target="_blank">законопроект</a>, если его примут, нагрузка на упрощенцев снизится.</div>
+
+            <div id="message8" class="false-ans hidden ans">В настоящий момент изменения в НК РФ обязывают упрощенцев выставлять счета-фактуры с пометкой «Без НДС», даже если их доходы не превысили 60 млн.руб. (п. <a href="https://normativ.kontur.ru/document?moduleId=1&documentId=479132&rangeId=6525725" target="_blank">5</a> ст. 168 НК РФ). Также установлена обязанность ведения книги продаж (п. «ч» Правил ведения книги продаж, утв. Постановлением Правительства от 26.12.2011 <a href="https://normativ.kontur.ru/document?moduleId=1&documentId=478552" target="_blank">№ 1137</a>). Скорее всего, эти нормы изменятся — опубликован <a href="https://sozd.duma.gov.ru/bill/727330-8" target="_blank">законопроект</a>, если его примут, нагрузка на упрощенцев снизится.</div>
+        </form>
+        
+        <form id="quiz-form-5" class="quiz-form">
+            <p class="question">Если предприниматель в 2025 году работает в сфере услуг или с небольшими поставщиками на УСН, в большинстве случаев ему выгодно выбрать пониженные ставки НДС.</p>
+            <div class="ans-var">
+                <input type="radio" id="q5-ans1" value="correct" class="real-radio">
+                <label for="q5-ans1">Верю</label>
+            </div>
+            <div class="ans-var">
+                <input type="radio" id="q5-ans2" value="incorrect">
+                <label for="q5-ans2">Не верю</label>
+            </div>
+            <div id="message9" class="true-ans hidden ans">Да, так считает большинство экспертов. В этой ситуации нет входящего НДС от поставщиков, а значит предприниматель не сможет получить налоговый вычет. Выгоднее платить налог по пониженной ставке (5% или 7%). Мы подготовили примеры расчета налоговой нагрузки с разными ставками НДС — читайте <a href="https://www.kontur-extern.ru/info/52122-nds_na_usn" target="_blank">статью</a>.
+            </div>
+            <div id="message10" class="false-ans hidden ans">Не совсем так.  В этой ситуации нет входящего НДС от поставщиков, а значит, предприниматель не сможет получить налоговый вычет. Выгоднее платить налог по пониженной ставке (5% или 7%). Мы подготовили примеры расчета налоговой нагрузки с разными ставками НДС — читайте <a href="https://www.kontur-extern.ru/info/52122-nds_na_usn" target="_blank">статью</a>.</div>
+        </form>
+    </div>
+    <div id="result">
+        <div id="result-score">
+
+        </div>
+        <div class="description-wrapper">
+            <div id="point-0-description" class="hidden">
+                <p class='title-description'>А вы точно бухгалтер?</p>
+                <p class='text-description'>Наверное, вы заглянули в этот раздел случайно, на самом деле вы далеки от бухучета и налогообложения. А если это не так, то попробуйте использовать сервис Контур.НДС+. Он проверит декларацию на соблюдение контрольных соотношений, сверит отчетность с данными контрагентов, поможет не допустить ошибок, снизить риск требования от ФНС.</p>
+            </div>
+            <div id="point-1-description" class="hidden">
+                <p class='title-description'>А вы точно бухгалтер?</p>
+                <p class='text-description'>Наверное, вы заглянули в этот раздел случайно, на самом деле вы далеки от бухучета и налогообложения. А если это не так, то попробуйте использовать сервис Контур.НДС+. Он проверит декларацию на соблюдение контрольных соотношений, сверит отчетность с данными контрагентов, поможет не допустить ошибок, снизить риск требования от ФНС.</p>
+            </div>
+            <div id="point-2-description" class="hidden">
+                <p class='title-description'>А вы точно бухгалтер?</p>
+                <p class='text-description'>Наверное, вы заглянули в этот раздел случайно, на самом деле вы далеки от бухучета и налогообложения. А если это не так, то попробуйте использовать сервис Контур.НДС+. Он проверит декларацию на соблюдение контрольных соотношений, сверит отчетность с данными контрагентов, поможет не допустить ошибок, снизить риск требования от ФНС.</p>
+            </div>
+            <div id="point-3-description" class="hidden">
+                <p class='title-description'>Нужно больше стараться</p>
+                <p class='text-description'>Вы знакомы с темой, но есть и небольшие пробелы в знаниях. Помощником в работе станет сервис <a href="https://kontur.ru/sverka-nds?utm_source=ke_info&utm_medium=cpm&utm_campaign=nds_october&utm_content=nds_usn" target="_blank">Контур.НДС+</a>. Он проверит декларацию на соблюдение контрольных соотношений, сверит отчетность с данными контрагентов, поможет не допустить ошибок, снизить риск требования от ФНС.</p>
+            </div>
+            <div id="point-4-description" class="hidden">
+                <p class='title-description'>Вы супер!</p>
+                <p class='text-description'>Наверное, вы заглянули в этот раздел случайно, на самом деле вы далеки от бухучета и налогообложения. А если это не так, то попробуйте использовать сервис <a href="https://kontur.ru/sverka-nds?utm_source=ke_info&utm_medium=cpm&utm_campaign=nds_october&utm_content=nds_usn" target="_blank">Контур.НДС+</a>. Он проверит декларацию на соблюдение контрольных соотношений, сверит отчетность с данными контрагентов, поможет не допустить ошибок, снизить риск требования от ФНС.</p>
+            </div>
+            <div id="point-5-description" class="hidden">
+                <p class='title-description'>Вы супер!</p>
+                <p class='text-description'>Наверное, вы заглянули в этот раздел случайно, на самом деле вы далеки от бухучета и налогообложения. А если это не так, то попробуйте использовать сервис <a href="https://kontur.ru/sverka-nds?utm_source=ke_info&utm_medium=cpm&utm_campaign=nds_october&utm_content=nds_usn" target="_blank">Контур.НДС+</a>. Он проверит декларацию на соблюдение контрольных соотношений, сверит отчетность с данными контрагентов, поможет не допустить ошибок, снизить риск требования от ФНС.</p>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
